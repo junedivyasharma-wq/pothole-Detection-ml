@@ -23,7 +23,7 @@ The system performs image preprocessing, feature extraction, model training, eva
 
 •	Both models are trained and evaluated on the same dataset to compare accuracy and classification performance.
 
-#Dataset Description
+# Dataset Description
 
 The dataset contains road images organized into two folders:
 
@@ -70,11 +70,13 @@ Convert images to grayscale
 Flatten image matrices into feature vectors
 
 3. Label Encoding
+
 0 → Normal Road
 
 1 → Pothole
 
 4. Train-Test Split
+   
 80% training data
 
 20% testing data
