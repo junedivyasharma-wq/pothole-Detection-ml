@@ -61,25 +61,30 @@ Hence, the dataset is uploaded manually as a ZIP file during runtime using Colab
 
 # Methodology
 1. Dataset Upload & Extraction
-Dataset ZIP (images.zip) is uploaded manually using files.upload()
-Files are extracted inside the Colab environment
+
+   Dataset ZIP (images.zip) is uploaded manually using files.upload()
+
+   Files are extracted inside the Colab environment
 
 2. Image Preprocessing
-Resize images to 128 × 128
-Convert images to grayscale
-Flatten image matrices into feature vectors
+   
+   Resize images to 128 × 128
+
+   Convert images to grayscale
+
+   Flatten image matrices into feature vectors
 
 3. Label Encoding
 
-0 → Normal Road
+   0 → Normal Road
 
-1 → Pothole
+   1 → Pothole
 
 4. Train-Test Split
    
-80% training data
+   80% training data
 
-20% testing data
+   20% testing data
 
 Stratified split to maintain class balance
 
@@ -102,6 +107,7 @@ Stratified split to maintain class balance
 Random Forest achieved better performance compared to SVM
 
 Confusion matrices are visualized using heatmaps for both models
+
 (Exact accuracy values depend on dataset size and quality.)
 
 # Testing on Custom Image
@@ -118,12 +124,17 @@ Prediction: Pothole /Normal
 # Limitations
 
 1.Uses traditional ML models instead of deep learning
+
 2.Performance depends on image quality and dataset size
+
 3.Real-time detection not implemented
 
 # Future Enhancements
 
 1.Use CNN / Deep Learning for improved accuracy
+
 2.Real-time pothole detection using video input
+
 3.GPS-based pothole mapping
+
 4.Mobile or web-based deployment
